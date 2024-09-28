@@ -1,0 +1,53 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\aravp> mkdir Module1
+
+
+    Directory: C:\Users\aravp
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/28/2024  10:57 PM                Module1
+
+
+PS C:\Users\aravp> New-Item -Path 'C:\Users\aravp\Module1\Test_Folder' -ItemType Directory
+
+
+    Directory: C:\Users\aravp\Module1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/28/2024  10:58 PM                Test_Folder
+
+
+PS C:\Users\aravp> cd Module1
+PS C:\Users\aravp\Module1> ls
+
+
+    Directory: C:\Users\aravp\Module1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/28/2024  10:58 PM                Test_Folder
+
+
+PS C:\Users\aravp\Module1> cd Test_Folder
+PS C:\Users\aravp\Module1\Test_Folder> ls
+PS C:\Users\aravp\Module1\Test_Folder> cd ..
+PS C:\Users\aravp\Module1> cd ..
+PS C:\Users\aravp> rm Module1
+
+Confirm
+The item at C:\Users\aravp\Module1 has children and the Recurse parameter
+was not specified. If you continue, all children will be removed with the
+item. Are you sure you want to continue?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help
+(default is "Y"):
+PS C:\Users\aravp>
+PS C:\Users\aravp>
